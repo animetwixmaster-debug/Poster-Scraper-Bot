@@ -24,7 +24,7 @@ except ModuleNotFoundError:
 config_file.update({k: v.strip() if isinstance(v, str) else v
                     for k, v in environ.items() if k in var_list})
 
-BOT_TOKEN = config_file.get("BOT_TOKEN", "")
+BOT_TOKEN = config_file.get("BOT_TOKEN", "8776719581:AAFsgBz1VGO2mSwPwU7wnc2cLjHtYBTn")
 API_ID = config_file.get("API_ID")
 API_HASH = config_file.get("API_HASH")
 
@@ -32,7 +32,7 @@ if not BOT_TOKEN or not API_ID or not API_HASH:
     log_error("BOT_TOKEN, API_ID, or API_HASH missing! Exiting...")
     exit(1)
 
-UPSTREAM_REPO = config_file.get("UPSTREAM_REPO", "").strip()
+UPSTREAM_REPO = config_file.get("UPSTREAM_REPO", "https://github.com/XalFH/Poster-Scraper-Bot").strip()
 UPSTREAM_BRANCH = config_file.get("UPSTREAM_BRANCH", "main").strip()
 
 def update_repo():
