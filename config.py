@@ -5,12 +5,12 @@ load_dotenv("../config.env", override=True)
 load_dotenv("config.env", override=True) 
 
 class Config:
-    API_ID = int(os.environ.get("API_ID", 0))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    API_ID = int(os.environ.get("25210379", 0))
+    API_HASH = os.environ.get("2f43e4bccc419e3b7e28e3219bb1d68c", "")
+    BOT_TOKEN = os.environ.get("8776719581:AAFsgBz1VGO2mSwPwU7wnc2cLjHtYBTn-E0", "")
     DATABASE_URL = os.environ.get("DATABASE_URL", "")
     DATABASE_NAME = os.environ.get("DATABASE_NAME", "ebotz")
-    OWNER_ID = int(os.environ.get("OWNER_ID", 0))
+    OWNER_ID = int(os.environ.get("-1003846600411", 0))
     SUDO_USERS = (
         list(map(int, os.environ.get("SUDO_USERS", "").split()))
         if os.environ.get("SUDO_USERS")
