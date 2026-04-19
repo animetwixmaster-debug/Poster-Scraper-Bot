@@ -32,7 +32,7 @@ if not BOT_TOKEN or not API_ID or not API_HASH:
     log_error("BOT_TOKEN, API_ID, or API_HASH missing! Exiting...")
     exit(1)
 
-UPSTREAM_REPO = config_file.get("UPSTREAM_REPO", "https://github.com/XalFH/Poster-Scraper-Bot").strip()
+UPSTREAM_REPO = config_file.get("UPSTREAM_REPO", "https://github.com/the-piro/pstr").strip()
 UPSTREAM_BRANCH = config_file.get("UPSTREAM_BRANCH", "main").strip()
 
 def update_repo():
