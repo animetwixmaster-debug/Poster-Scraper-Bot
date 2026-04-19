@@ -9,15 +9,15 @@ class Config:
     API_HASH = os.environ.get("2f43e4bccc419e3b7e28e3219bb1d68c", "")
     BOT_TOKEN = os.environ.get("8776719581:AAFsgBz1VGO2mSwPwU7wnc2cLjHtYBTn-E0", "")
     DATABASE_URL = os.environ.get("DATABASE_URL", "")
-    DATABASE_NAME = os.environ.get("DATABASE_NAME", "ebotz")
-    OWNER_ID = int(os.environ.get("-1003846600411", 0))
+    DATABASE_NAME = os.environ.get("DATABASE_NAME", "Nandu")
+    OWNER_ID = int(os.environ.get("1856765089", 0))
     SUDO_USERS = (
         list(map(int, os.environ.get("SUDO_USERS", "").split()))
         if os.environ.get("SUDO_USERS")
         else []
     )
     AUTH_CHATS = (
-        list(map(int, os.environ.get("AUTH_CHATS", "").split()))
+        list(map(int, os.environ.get("AUTH_CHATS", "-1003846600411").split()))
         if os.environ.get("AUTH_CHATS")
         else []
     )
@@ -110,7 +110,7 @@ class Config:
 <b>✺ Original URL:</b>
 <code>{original_url}</code>
 
-<blockquote>Bot By ➤ @NxTalks</blockquote>
+<blockquote>Bot By ➤ @NaChannel4</blockquote>
 """.strip()
 
     POSER_TEMPLATE = """
@@ -128,5 +128,5 @@ class Config:
 {posters}
 </blockquote>
 
-<blockquote>Bot By ➤ @NxTalks</blockquote>
+<blockquote>Bot By ➤ @NaChannel4</blockquote>
 """.strip()
